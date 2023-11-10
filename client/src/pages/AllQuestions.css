@@ -1,0 +1,188 @@
+/* Styling for the entire AllQuestions component */
+.AllQuestions {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	/* text-align: center; */
+	width: 100%;
+}
+.forbackGround {
+	background-color: #fafafa;
+	padding-top: 30px;
+	/* margin-left: 70px; */
+	margin-top: 120px;
+	/* margin-bottom: 10px; */
+	scrollbar-width: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thewhole {
+	/* overflow-x: scroll; */
+	/* max-height: 100%; */
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the "Ask Questions" text */
+.AskQuestions {
+	display: inline-block;
+}
+
+/* Style for the username */
+.Username {
+	display: flex;
+	/* color: #fafafa; */
+	/* margin-left: 100px;  */
+}
+
+/* Style for the question list */
+.QuestionList {
+	list-style: none;
+	margin-left: 10px;
+}
+
+/* Style for each question item */
+.QuestionItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* border-top: 1px solid #000; Top border for each question */
+	border-top: 1px solid #b8c3d1; 
+	padding: 10px; 
+	height: 150px;
+	width: 100%;
+}
+
+/* Style for the question title and username */
+.QuestionInfo {
+	display: flex;
+	/* flex-direction: row; */
+	align-items: center;
+	/* justify-content: space-between; */
+	/* padding: 90px 20px 30px;  */
+}
+.QuestionInfo .flex-row {
+	display: flex;
+	align-items: center;
+}
+/* Style for the question title */
+.QuestionTitle {
+	font-weight: 400;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* flex: 1; */
+	/* word-wrap: break-word; */
+}
+
+/* Style for the username */
+.username {
+	color: #012d6a;
+	margin-left: 20px;
+	width: 30%;
+	
+	/* padding-left: 20px; */
+}
+
+/* Style for the link to the question page */
+.QuestionLink {
+	text-decoration: none;
+	color: #012d66;
+	font-weight: 100;
+	font-size:medium;
+	/* padding-left: 10px; */
+	padding-left: 5px;
+}
+
+/* Style for the loading and error messages */
+.LoadingMessage,
+.ErrorMessage {
+	margin-top: 20px; 
+	color: #ff0000; 
+}
+.ArrowIcon {
+	position: absolute;
+	right: 0%;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: column;
+}
+.d-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.tops {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+	/* justify-content: space-evenly; */
+	padding-left: 50px;
+}
+.blue {
+	color: white;
+	font-size: 24;
+	background-color: #0b5ed7;
+}
+/* .onhover .QuestionItem:hover {
+	background-color: #fafafa;
+}  */
+ /* .onhover li:hover { 
+	 color: #000; 
+ background-color: #f5f5f5; 
+ transition: all 0.2s; 
+transition: all 0.5s;
+ transition-timing-function: ease-in; 
+ }    */
+.onhover:hover {
+	background-color: rgba(128, 128, 128, 0.05);
+	color: #378ad3;
+	transition: all 0.2s;
+	transition: all 0.5s;
+	transition-timing-function: ease-in;
+}
+.AvatarQ {
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	color: gray;
+}
+.AvatarQ:hover{
+	/* background-color:#378ad3; */
+}
+
+/* Media query for screens with a minimum width of 720px */
+@media (min-width: 769px) {
+	.AvatarQ {
+		width: 80px; 
+		height: 80px; 
+	}
+	.ArrowIcon {
+		position: absolute;
+		right: 20%;
+	}
+	.tops {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 40px;
+		/* justify-content: space-evenly; */
+		padding-left: 50px;
+	}
+
+	.rightone {
+		/* margin-left: 100px; */
+		position: absolute;
+		right: 20%;
+		/* right: 0; */
+		/* top: 0; */
+	}
+	.QuestionLink {
+		font-size: large;
+		padding-left: 35px;
+	}
+}
